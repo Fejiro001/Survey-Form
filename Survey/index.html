@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">General Survey Form</h1>
+
+  <p id="description">Take this survey so we know more about you</p>
+
+  <form action="#" id="survey-form">
+    <label id="name-label">Name <input type="text" id="name" required placeholder="Enter your name"></label>
+
+    <label id="email-label">Email <input type="email" id="email" required placeholder="Enter your email"></label>
+
+    <label id="number-label">Age <input type="number" id="number" min="13" max="100"
+        placeholder="Enter your age"></label>
+
+    <label>What is your gender?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="3">Other</option>
+      </select>
+    </label>
+
+    <label>Do you own a pet?
+      <label><input type="radio" name="pet-owner" value="1" class="linear"> Yes</label>
+      <label><input type="radio" name="pet-owner" value="2" class="linear"> No</label>
+    </label>
+
+    <label for="">What Gadgets do you own? <div>(Check all that apply)</div>
+      <label><input type="checkbox" value="1" class="linear"> Smartphone</label>
+      <label><input type="checkbox" value="2" class="linear"> Laptop</label>
+      <label><input type="checkbox" value="3" class="linear"> Desktop</label>
+      <label><input type="checkbox" value="4" class="linear"> Game Console</label>
+      <label><input type="checkbox" value="5" class="linear"> Cellphone</label>
+      <label><input type="checkbox" value="6" class="linear"> Tablet</label>
+    </label>
+
+    <label for="">Any other thing we need to know about you?
+      <textarea name="" id="" cols="20" rows="5" placeholder="Enter your comment here..."></textarea>
+    </label>
+
+    <input id="submit" type="submit" value="Submit">
+
+  </form>
+</body>
+
+</html>
